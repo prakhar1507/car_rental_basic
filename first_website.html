@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prakhar's car rental</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Fredoka+One&family=Macondo&family=Oleo+Script+Swash+Caps&family=Poppins:wght@100&display=swap" rel="stylesheet">
+<style>
+    /* css reset */
+body{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+    height: 791px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.left{
+    position: absolute;
+left:47px;
+top:21px;
+    /* border:3px solid yellow; */
+display: inline-block;
+background-color: black;
+width: 100px;
+}
+.left img{
+    width: 40px;
+  margin:3px;
+  padding: 3px;
+  align-items: center;
+}
+.left div{
+     text-align: center; 
+font-size: 19px;
+padding: 5px -9px;
+margin:-1px -18px;
+}
+.mid{
+display:block;
+width: 50%;
+margin:20px auto;
+    /* border:3px solid red; */
+}
+.right{
+position: absolute;
+right:34px;
+top: 20px;
+    /* border:3px solid blue; */
+display:inline-block;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 18px 32px;
+}
+.navbar li a:hover,.navnar li a.active{
+    text-decoration: underline;
+    color: black;
+}
+.btn{
+    margin: 13px 5px;
+    color:white;
+    background-color: rgb(182, 46, 46);
+padding: 3px 4px;
+border:2px solid grey;
+border-radius: 10px;
+font-size: 15px;
+cursor: pointer;
+font-family: 'Balsamiq Sans', cursive;
+}
+.btn:hover{
+    background-color: black;
+}
+.container {
+     /* border: 2px solid gray;  */
+    margin: 124px 118px;
+    padding: 19px 82px;
+    width: 36%;
+    border-radius: 10px;
+}
+    .form-group input {
+    font-size: 20px;
+    text-align: center;
+    width: 262px;
+    display: block;
+    margin: 19px -88px;
+    padding: 4px 12px;
+    border-radius: 63px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+h1{
+    margin: 7px -161px;
+    padding: 13px 4px;
+    color:whitesmoke;
+}
+/* #submit{
+    width: 286px;
+    margin:2px -86px;
+    padding: 3px 0px;
+    color:white;
+    background-color: rgb(182, 46, 46);
+border:2px solid grey;
+border-radius: 10px;
+font-size: 19px;
+cursor: pointer;
+font-family: 'Balsamiq Sans', cursive;
+}
+#submit:hover{
+    background-color: black;
+} */
+#submit{
+    text-decoration: none;
+    font-size: 19px;
+     color: white;  /* color:rgb(182, 46, 46); */
+    padding: 3px 103px;
+    border:2px solid rgb(182, 46, 46);
+    position: relative;
+    margin:17px -72px;
+    font-family:'Balsamiq Sans', cursive; ;
+}
+#submit::before,
+#submit::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: inherit;
+    transition: all .5s;
+}
+#submit::before{
+    top: -15px;
+    left:-15px;
+    border-width: 3px 0px 0px 3px;
+}
+#submit::after{
+    top: -15px;
+    left:-15px;
+    border-width: 3px 0px 0px 3px;
+}
+#submit:hover::before,
+#submit:hover::after{
+    width: calc(100% + 27px);
+
+    height: calc(100% + 27px);
+    
+}
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+        <img src="logo.png">
+        <div>Quick Drive</div>
+        </div>
+    <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+    </div>
+<!-- right box for button -->
+    <div class="right">
+<button class="btn">
+    Call Us Now
+</button>
+<button class="btn">
+    Email Us
+</button>
+</div>    
+</header>
+<div class="container">
+    <h1>Best Car Rental Services in Delhi</h1>
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <input type="date" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Contact number">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your email id">
+        </div>
+    <button class="btn" id="submit">Submit</button>
+    </form>
+</div>
+<div class="my">
+    <h6>This Website is Created By Prakhar Srivastava &copyright &trade;</h6>
+</div>
+</body>
+</html>
